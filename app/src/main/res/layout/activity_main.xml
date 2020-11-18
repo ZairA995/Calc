@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#201F1E"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/mess"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="#DAD7D7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#FFB300"
+            android:ems="10"
+            android:hint="Text"
+            android:inputType="textPersonName|numberDecimal"
+            android:textColor="#FBF9F9"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mess" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="60dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input">
+
+            <TableLayout
+                android:id="@+id/numbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/clear_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#8B616160"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetRight="6dp"
+                        android:shadowColor="#FFFDFD"
+                        android:shadowDx="2"
+                        android:shadowDy="4"
+                        android:shadowRadius="10"
+                        android:text="@string/clear_all"
+                        android:textAlignment="center"
+                        android:textColor="#FFFDFD"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:cornerRadius="50dp"
+                        app:iconTint="#121111" />
+
+                    <Button
+                        android:id="@+id/clear_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#8B616160"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetRight="6dp"
+                        android:shadowColor="#FFFDFD"
+                        android:shadowDx="2"
+                        android:shadowDy="4"
+                        android:shadowRadius="10"
+                        android:text="@string/clear_one"
+                        android:textAlignment="center"
+                        android:textColor="#FFFDFD"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:cornerRadius="50dp"
+                        app:iconTint="#121111" />
+
+                    <Button
+                        android:id="@+id/percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#8B616160"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetRight="6dp"
+                        android:shadowColor="#FFFDFD"
+                        android:shadowDx="2"
+                        android:shadowDy="4"
+                        android:shadowRadius="10"
+                        android:text="@string/percent"
+                        android:textAlignment="center"
+                        android:textColor="#FFFDFD"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:cornerRadius="50dp"
+                        app:iconTint="#121111" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/seven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#201F1E"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetTop="0dp"
+                        android:insetRight="6dp"
+                        android:insetBottom="0dp"
+                        android:shadowColor="#070707"
+                        android:text="@string/seven"
+                        android:textAlignment="center"
+                        android:textColor="#FAF6F6"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:iconTint="#121111" />
+
+                    <Button
+                        android:id="@+id/eight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#201F1E"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetTop="0dp"
+                        android:insetRight="6dp"
+                        android:insetBottom="0dp"
+                        android:shadowColor="#070707"
+                        android:text="@string/eight"
+                        android:textAlignment="center"
+                        android:textColor="#FAF6F6"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:iconTint="#121111" />
+
+                    <Button
+                        android:id="@+id/nine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#201F1E"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetTop="0dp"
+                        android:insetRight="6dp"
+                        android:insetBottom="0dp"
+                        android:shadowColor="#070707"
+                        android:text="@string/nine"
+                        android:textAlignment="center"
+                        android:textColor="#FAF6F6"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:iconTint="#121111" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#201F1E"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetTop="0dp"
+                        android:insetRight="6dp"
+                        android:insetBottom="0dp"
+                        android:shadowColor="#070707"
+                        android:text="@string/four"
+                        android:textAlignment="center"
+                        android:textColor="#FAF6F6"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:iconTint="#121111" />
+
+                    <Button
+                        android:id="@+id/five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#201F1E"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetTop="0dp"
+                        android:insetRight="6dp"
+                        android:insetBottom="0dp"
+                        android:shadowColor="#070707"
+                        android:text="@string/five"
+                        android:textAlignment="center"
+                        android:textColor="#FAF6F6"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:iconTint="#121111" />
+
+                    <Button
+                        android:id="@+id/six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#201F1E"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetTop="0dp"
+                        android:insetRight="6dp"
+                        android:insetBottom="0dp"
+                        android:shadowColor="#070707"
+                        android:text="@string/six"
+                        android:textAlignment="center"
+                        android:textColor="#FAF6F6"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:iconTint="#121111" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#201F1E"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetTop="0dp"
+                        android:insetRight="6dp"
+                        android:insetBottom="0dp"
+                        android:shadowColor="#070707"
+                        android:text="@string/one"
+                        android:textAlignment="center"
+                        android:textColor="#FAF6F6"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:iconTint="#121111" />
+
+                    <Button
+                        android:id="@+id/two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#201F1E"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetTop="0dp"
+                        android:insetRight="6dp"
+                        android:insetBottom="0dp"
+                        android:shadowColor="#070707"
+                        android:text="@string/two"
+                        android:textAlignment="center"
+                        android:textColor="#FAF6F6"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:iconTint="#121111" />
+
+                    <Button
+                        android:id="@+id/three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#201F1E"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetTop="0dp"
+                        android:insetRight="6dp"
+                        android:insetBottom="0dp"
+                        android:shadowColor="#070707"
+                        android:text="@string/three"
+                        android:textAlignment="center"
+                        android:textColor="#FAF6F6"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:iconTint="#121111" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/zero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#201F1E"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetTop="0dp"
+                        android:insetRight="6dp"
+                        android:insetBottom="0dp"
+                        android:shadowColor="#070707"
+                        android:text="@string/zero"
+                        android:textAlignment="center"
+                        android:textColor="#FAF6F6"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:iconTint="#121111" />
+
+                    <Button
+                        android:id="@+id/ravno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFB300"
+                        android:insetLeft="6dp"
+                        android:insetRight="6dp"
+                        android:text="@string/ravno"
+                        android:textColor="#050505"
+                        android:textSize="24sp"
+                        app:cornerRadius="50dp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/operations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#8B616160"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetRight="6dp"
+                        android:shadowColor="#FFFDFD"
+                        android:shadowDx="2"
+                        android:shadowDy="4"
+                        android:shadowRadius="10"
+                        android:text="@string/plus"
+                        android:textAlignment="center"
+                        android:textColor="#FFFDFD"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:cornerRadius="50dp"
+                        app:iconTint="#121111" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#8B616160"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetRight="6dp"
+                        android:shadowColor="#FFFDFD"
+                        android:shadowDx="2"
+                        android:shadowDy="4"
+                        android:shadowRadius="10"
+                        android:text="@string/minus"
+                        android:textAlignment="center"
+                        android:textColor="#FFFDFD"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:cornerRadius="50dp"
+                        app:iconTint="#121111" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/mul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#8B616160"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetRight="6dp"
+                        android:shadowColor="#FFFDFD"
+                        android:shadowDx="2"
+                        android:shadowDy="4"
+                        android:shadowRadius="10"
+                        android:text="@string/mul"
+                        android:textAlignment="center"
+                        android:textColor="#FFFDFD"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:cornerRadius="50dp"
+                        app:iconTint="#121111" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/div"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#8B616160"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetRight="6dp"
+                        android:shadowColor="#FFFDFD"
+                        android:shadowDx="2"
+                        android:shadowDy="4"
+                        android:shadowRadius="10"
+                        android:text="@string/div"
+                        android:textAlignment="center"
+                        android:textColor="#FFFDFD"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:cornerRadius="50dp"
+                        app:iconTint="#121111" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#8B616160"
+                        android:fontFamily="sans-serif-light"
+                        android:insetLeft="6dp"
+                        android:insetRight="6dp"
+                        android:shadowColor="#FFFDFD"
+                        android:shadowDx="2"
+                        android:shadowDy="4"
+                        android:shadowRadius="10"
+                        android:text="@string/point"
+                        android:textAlignment="center"
+                        android:textColor="#FFFDFD"
+                        android:textSize="24sp"
+                        android:typeface="serif"
+                        app:cornerRadius="50dp"
+                        app:iconTint="#121111" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
